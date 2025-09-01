@@ -1,0 +1,31 @@
+Steps I followed to implement Linear Regression with Batch Gradient Descent:
+
+1. Prepared data:
+   - X = house sizes, Y = house prices
+   - Reshaped X to column vector
+   - Added column of ones for θ0 (bias)
+
+2. Initialized parameters:
+   - θ = [0,0], α = 0.01, iterations = 1000
+
+3. Defined cost function:
+   - Computes average squared error between predicted and actual Y
+
+4. Implemented batch gradient descent:
+   - Calculated gradients for θ0 and θ1
+   - Updated θ iteratively
+   - Stored cost history to observe convergence
+
+5. Trained model:
+   - After iterations, obtained final θ ≈ [-0.03, 1.496]
+   - Final cost ≈ 0.12
+   - Best-fit line: h(x) = -0.03 + 1.496 * x
+
+6. Predictions:
+   - Can now use trained θ to predict new house prices
+   - Example: size 10 → predicted price ≈ 14.93
+
+7. Observations:
+   - Initial hypothesis (θ=[0,0]) was way off → high cost
+   - Gradient descent reduced cost → trained line fits data well
+   - Final hypothesis can be used for prediction.

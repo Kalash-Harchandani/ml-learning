@@ -1,0 +1,19 @@
+Supervised vs Unsupervised Learning:
+- Supervised learning uses labeled data (X → Y).
+- Unsupervised learning uses unlabeled data.
+
+Linear Regression:
+- Goal: predict output Y from input X using a straight line.
+- Hypothesis: h(x) = θ0 + θ1 * X
+- θ0 = bias (intercept), θ1 = weight (slope)
+- Cost function: J(θ) = 1/(2m) * sum((h(x) - Y)^2)
+  Measures how far predictions are from actual values.
+
+Gradient Descent:
+- Start with initial θ (usually [0,0])
+- Iteratively update θ to reduce cost:
+    θj := θj - α * derivative_of_J_wrt_θj
+- Batch Gradient Descent: uses all training examples to compute gradients each step.
+- Learning rate α controls step size.
+- Converges to best-fit line minimizing the cost.
+- Final θ gives the trained hypothesis.
