@@ -1,0 +1,43 @@
+Steps I followed to implement Linear Regression with Normal Equation (toy dataset):
+
+Prepared data:
+
+X = [[1,1],[1,2],[1,3]] (column 1 = bias, column 2 = feature)
+
+Y = [1,2,3]
+
+Computed θ directly:
+
+θ = (X^T X)^-1 X^T Y
+
+Prints Normal Equation solution: θ0 = 0, θ1 = 1
+
+Prepared cost surface:
+
+θ0 range: -1 to 3, θ1 range: 0 to 2
+
+Calculated cost J(θ) for each combination to visualize contour
+
+Found minimum cost:
+
+Minimum cost occurs at Normal Equation θ
+
+Prints minimum cost ≈ 0
+
+Plotted contour:
+
+Contour levels show cost function landscape
+
+Red dot marks Normal Equation solution
+
+Labels axes, title, grid, colorbar for clarity
+
+Observations:
+
+Normal Equation gives exact solution in one step
+
+Cost surface shows global minimum at solution
+
+Toy dataset is perfect → θ converges exactly
+
+Real datasets may require extra care if X^T X not invertible

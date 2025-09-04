@@ -1,0 +1,28 @@
+Normal Equation for Linear Regression:
+
+Goal: Predict output Y from input X using a straight line.
+
+Hypothesis: h(x) = θ0 + θ1 * X
+
+θ0 = bias (intercept), θ1 = weight (slope)
+
+Cost function: J(θ) = 1/(2m) * sum((h(x) - Y)^2)
+
+Measures how far predictions are from actual values.
+
+Normal Equation Concept:
+
+Computes exact θ in one step without iterations:
+θ = (X^T X)^-1 X^T Y
+
+Only applicable for linear regression with invertible X^T X
+
+Provides global minimum directly → no need for gradient descent
+
+Cost function is minimized exactly
+
+Difference from Gradient Descent:
+
+No learning rate, no iterative updates
+
+Best for small to medium datasets (matrix inversion can be expensive for large data)
