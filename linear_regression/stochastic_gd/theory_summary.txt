@@ -1,0 +1,28 @@
+Stochastic Gradient Descent (SGD) for Linear Regression:
+
+Goal: Predict output Y from input X using a straight line.
+
+Hypothesis: h(x) = θ0 + θ1 * X
+
+θ0 = bias (intercept), θ1 = weight (slope)
+
+Cost function: J(θ) = 1/(2m) * sum((h(x) - Y)^2)
+
+Measures how far predictions are from actual values.
+
+SGD Concept:
+
+Updates θ for each training sample individually:
+θj := θj - α * error * Xj(i)
+
+α = learning rate → controls step size
+
+Iterative updates → oscillates around global minimum
+
+On a perfect linear dataset, θ quickly converges to exact values, cost ≈ 0
+
+Difference from Batch Gradient Descent:
+
+BGD computes gradient over all samples
+
+SGD updates per sample → faster, noisier

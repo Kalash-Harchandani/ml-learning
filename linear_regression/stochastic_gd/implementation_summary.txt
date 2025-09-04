@@ -1,0 +1,51 @@
+Steps I followed to implement Linear Regression with SGD (toy dataset):
+
+Prepared data:
+
+X = [[1,1],[1,2],[1,3]] (column 1 = bias, column 2 = feature)
+
+Y = [1,2,3]
+
+Initialized parameters:
+
+θ = [0,0], α = 0.1, iterations = 50
+
+Defined cost function:
+
+Computes mean squared error between predicted and actual Y
+
+Implemented SGD:
+
+For each iteration:
+
+For each sample i:
+
+Compute error = (prediction - Y[i])
+
+Update θ: θj = θj - α * error * X[i]
+
+Store cost history for plotting
+
+Trained model:
+
+After iterations, θ converged to ≈ [0,1]
+
+Cost reduced nearly to 0
+
+Final hypothesis: h(x) = 0 + 1 * x
+
+Predictions:
+
+Can now use θ to predict new values
+
+Example: X = 4 → predicted Y ≈ 4
+
+Observations:
+
+Initial θ = [0,0] → high cost
+
+SGD gradually reduced cost → θ approaches true values
+
+Toy dataset is perfect → convergence is very fast
+
+Real datasets will take longer and show oscillations
